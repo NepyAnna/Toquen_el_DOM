@@ -20,13 +20,7 @@ stages {
             }
         }
 
-    stage('Push to DockerHub') {
-        steps {
-            script {
-                sh "docker push ${IMAGE_TD}:${version001}"
-            }
-        }
-    }
+    
 
     }
   }
